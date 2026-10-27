@@ -1,38 +1,55 @@
 /*Name this external file gallery.js*/
 
-
-
 function upDate(previewPic){
 
-console.log("Guten Tag");
-
-console.log(previewPic);
+console.log("mouse over works");
 
 document.getElementById('image').innerHTML = previewPic.alt; 
 document.getElementById('image').style.backgroundImage = "url('" + previewPic.src +"')"; 
-	/* In this function you should 
-    1) change the url for the background image of the div with the id = "image" 
-    to the source file of the preview image
-    
-    2) Change the text  of the div with the id = "image" 
-    to the alt text of the preview image 
-    */
- 
 
 	}
  
 	function unDo(){
+        console.log("mouse out works");
+
 document.getElementById('image').style.backgroundImage = '';
 document.getElementById('image').innerHTML = "Hover over an image below to display here.";
-
-
-
-     /* In this function you should 
-    1) Update the url for the background image of the div with the id = "image" 
-    back to the orginal-image.  You can use the css code to see what that original URL was
-    
-    2) Change the text  of the div with the id = "image" 
-    back to the original text.  You can use the html code to see what that original text was
-    */
 		
 	}
+
+//keyboard functionality of above 
+
+function tabFocus(previewPic){
+    console.log("focus works");
+
+document.getElementById('image').innerHTML = previewPic.alt; 
+document.getElementById('image').style.backgroundImage = "url('" + previewPic.src +"')"; 
+
+
+}
+
+function tabBlur(){
+ 
+    console.log("blur works");
+
+
+document.getElementById('image').style.backgroundImage = '';
+document.getElementById('image').innerHTML = "Hover over an image below to display here.";
+		
+	}
+
+function tabRestart(){
+
+	currentImages = document.querySelectorAll(".preview")
+	for (var i = 0; i < currentImages.length; i++){
+
+	console.log("Image "+ i)
+
+	currentImages[i].setAttribute("tabindex", "0")
+
+	}	
+
+}
+
+
+	

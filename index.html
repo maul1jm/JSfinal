@@ -6,23 +6,24 @@
 	<link rel="stylesheet" href="css/gallery.css">
 	<script src = "js/gallery.js"></script>
 </head>
-<body>
-
+<body onload = "tabRestart()">
+	
 	<div id = "image">
 		Hover over an image below to display here.
 	</div>
 	
-	<img class = "preview" alt = "GDR-themed restaurant with authentic place settings" src = "images/DDR_Restaurant_Tisch.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "Children holding protest sign" src = "images/Demo_Straßenblockade_Sommer1992.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "Egg Cups made in the GDR" src = "images/Eierbecher.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "Soljanka soup" src = "images/Soljanka.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+ 	<img class = "preview" alt = "GDR-themed restaurant with authentic place settings" src = "images/DDR_Restaurant_Tisch.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "tabFocus(this)" onblur="tabBlur()" >
 
-	<img class = "preview" alt = "Image of Contract Worker law language" src = "images/Vietnamischevertragsarbeiterprogramm.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Children holding protest sign" src = "images/Demo_Straßenblockade_Sommer1992.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "tabFocus(this)" onblur="tabBlur()">
+	
+	<img class = "preview" alt = "Egg Cups made in the GDR" src = "images/Eierbecher.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "tabFocus(this)" onblur="tabBlur()" >
+	
+	<img class = "preview" alt = "Soljanka soup" src = "images/Soljanka.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "tabFocus(this)" onblur="tabBlur()" >
 
-	<img class = "preview" alt = "Wall Mural of garden furniture from Zeitgeschichtles Forum Leipzig" src = "images/Wall_Mural_Zeitgeschichtliches_Forum.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	<img class = "preview" alt = "Language of Contract Worker Law" src = "images/Vietnamischevertragsarbeiterprogramm.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "tabFocus(this)" onblur="tabBlur()" >
+
+	<img class = "preview" alt = "Garden furniture exhibit in Zeitgeschichtles Forum Leipzig" src = "images/Wall_Mural_Zeitgeschichtliches_Forum.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()" onfocus = "tabFocus(this)" onblur="tabBlur()" >
+
 
 
 </body>
